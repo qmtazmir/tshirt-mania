@@ -38,7 +38,8 @@ const Cart = ({ cart, handelRemoveFromCart }) => {
         </div>
       )}
       {command}
-      {cart.length !== 4 ? <p>Keep adding </p> : <button>REmove ALL</button>}
+      {cart.length !== 4 ? <p>Keep adding </p> : <button>Remove ALL</button>}
+      {cart.length > 4 && <button className="orange">Review Your Order</button>}
     </div>
   );
 };
